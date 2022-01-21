@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tannenbaum" />
         <module name="oop" />
         <module name="square" />
+        <module name="tannenbaum" />
+        <module name="Mond" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Mond" target="17" />
       <module name="oop" target="17" />
       <module name="square" target="17" />
       <module name="tannenbaum" target="17" />
