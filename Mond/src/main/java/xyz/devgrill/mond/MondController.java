@@ -14,9 +14,6 @@ public class MondController {
     private TextField Ausgabe;
 
     @FXML
-    private Button Zeichnen;
-
-    @FXML
     private RadioButton days;
 
     @FXML
@@ -43,19 +40,7 @@ public class MondController {
     void onBerechnen(ActionEvent event) {
         try {
             int kmh = Integer.parseInt(txt1.getText());
-
-            switch (active){
-                case "Day":
-                    int totalDay = 384400 * 24 / kmh;
-                    Ausgabe.setText(Integer.toString(totalDay));
-                    break;
-
-                case "Hour":
-                    int totalHour = 384400 / kmh;
-                    Ausgabe.setText(Integer.toString(totalHour));
-                    break;
-            }
-
+            Ausgabe.setText(Berechnen.Berechne(kmh, active));
         }catch (Exception e){
             System.out.println("Error");
         }
