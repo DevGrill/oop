@@ -26,28 +26,14 @@ public class TannenbaumController {
     @FXML
     void onDraw(ActionEvent event) {
         try {
-            String Tree = "";
-            int heightOfTrunk = Integer.parseInt(txt1.getText());
-            int widthOfTrunk = Integer.parseInt(txt2.getText());
-            int heightOfTree = Integer.parseInt(txt3.getText());
+        Tanne t = new Tanne(Integer.valueOf(txt1.getText())
+                , Integer.valueOf(txt2.getText())
+                , Integer.valueOf(txt3.getText()));
 
-            for (int r = 1; r <= heightOfTree; r++) {
-                for (int c = heightOfTree - r; c > 0; c--)
-                    Tree += (" ");
-                for (int d = 1; d <= r; d++)
-                Tree += "* ";
-                Tree += "\n";
-            }
+        t.draw();
 
-            for (int r = heightOfTree - heightOfTrunk; r <= heightOfTree - 1; r++) {
-                Tree += (" ");
-                for (int c = heightOfTree - 3; c > widthOfTrunk - 2; c--)
-                Tree += " ";
-                for (int d = widthOfTrunk; d > 0; d--)
-                Tree += "* ";
-                Tree += "\n";
-            }
-            Draw.setText(Tree);
+        Draw.setText(t.getTree());
+
         } catch (Exception e) {
             System.out.println("Bitte versuchen sie es erneut");
         }
