@@ -29,7 +29,7 @@ public class WahrenKorbController {
     void onAdd(ActionEvent event) {
         try {
             WahrenKorb w = new WahrenKorb(Produkt.getText(), Integer.parseInt(quanitiy.getText()));
-            w.addproduct();
+            w.newProduct();
             anzahl.setText(w.refreshQuantity());
         }catch (Exception e){
             e.printStackTrace();

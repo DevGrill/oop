@@ -17,9 +17,7 @@ public class WahrenKorb {
     }
 
     public void addproduct(){
-        int arraylengt = products.length;
-        arraylengt++;
-        products[arraylengt] = produktname;
+        System.out.println(products.length);
     }
 
     public String refreshQuantity(){
