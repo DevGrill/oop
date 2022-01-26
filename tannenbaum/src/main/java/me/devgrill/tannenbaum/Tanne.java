@@ -39,5 +39,4 @@ public class Tanne {
     public String getTree() {
         return Tree;
     }
-
 }

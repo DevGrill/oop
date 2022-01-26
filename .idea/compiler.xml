@@ -10,6 +10,7 @@
         <module name="square" />
         <module name="tannenbaum" />
         <module name="Mond" />
+        <module name="wahrenkorb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="oop" target="17" />
       <module name="square" target="17" />
       <module name="tannenbaum" target="17" />
+      <module name="wahrenkorb" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/oop.iml" filepath="$PROJECT_DIR$/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/square/square.iml" filepath="$PROJECT_DIR$/square/square.iml" />
       <module fileurl="file://$PROJECT_DIR$/tannenbaum/tannenbaum.iml" filepath="$PROJECT_DIR$/tannenbaum/tannenbaum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wahrenkorb/wahrenkorb.iml" filepath="$PROJECT_DIR$/wahrenkorb/wahrenkorb.iml" />
     </modules>
   </component>
 </project>
