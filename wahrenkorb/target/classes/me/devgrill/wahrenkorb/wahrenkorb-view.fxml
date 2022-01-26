@@ -14,6 +14,6 @@
       <Hyperlink fx:id="wahrenkorb" layoutX="236.0" layoutY="51.0" prefHeight="23.0" prefWidth="128.0" text="Wahrenkorb" />
       <Text fx:id="anzahl" layoutX="182.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(0)" wrappingWidth="43.13671875" />
       <Text layoutX="137.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anzahl" wrappingWidth="108.13671875" />
-      <TextField fx:id="quanitiy" layoutX="252.0" layoutY="183.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="quantity" layoutX="252.0" layoutY="183.0" prefHeight="25.0" prefWidth="37.0" />
     </children>
 </AnchorPane>

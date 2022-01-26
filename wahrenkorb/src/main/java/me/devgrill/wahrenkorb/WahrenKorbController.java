@@ -8,9 +8,11 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
+import java.util.LinkedList;
+
 public class WahrenKorbController {
 
-    int allquantity = 0;
+    int amount = 0;
 
     @FXML
     private Button hinzufügen;
@@ -22,18 +24,23 @@ public class WahrenKorbController {
     private Text anzahl;
 
     @FXML
-    private TextField quanitiy;
+    private TextField quantity;
 
     @FXML
     private Hyperlink wahrenkorb;
 
+    LinkedList<OrderItem> orderedItems = new LinkedList<OrderItem>();
+
     @FXML
     void onAdd(ActionEvent event) {
         try {
-            WahrenKorb w = new WahrenKorb(Produkt.getText(), Integer.parseInt(quanitiy.getText()), allquantity);
-            w.newProduct();
-            allquantity = Integer.parseInt(w.refreshQuantity());
-            anzahl.setText(w.refreshQuantity());
+            OrderItem item = new OrderItem(Produkt.getText(), Integer.parseInt(quantity.getText()));
+            item.setProductName(Produkt.getText());
+            item.setAmount(Integer.parseInt(quantity.getText()));
+            orderedItems.add(item);
+            amount++;
+            anzahl.setText("(" + Integer.toString(amount) + ")");
+            System.out.println(orderedItems.getLast());
         }catch (Exception e){
             e.printStackTrace();
         }
