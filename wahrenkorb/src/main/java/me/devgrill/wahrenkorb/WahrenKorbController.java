@@ -13,7 +13,7 @@ public class WahrenKorbController {
     int allquantity = 0;
 
     @FXML
-    private Button Hinzufügen;
+    private Button hinzufügen;
 
     @FXML
     private TextField Produkt;
