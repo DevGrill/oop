@@ -38,5 +38,4 @@ public class WahrenKorbController {
             e.printStackTrace();
         }
     }
-
 }
