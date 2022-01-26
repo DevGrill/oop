@@ -10,6 +10,8 @@ import javafx.scene.text.Text;
 
 public class WahrenKorbController {
 
+    int allquantity = 0;
+
     @FXML
     private Button Hinzufügen;
 
@@ -28,8 +30,9 @@ public class WahrenKorbController {
     @FXML
     void onAdd(ActionEvent event) {
         try {
-            WahrenKorb w = new WahrenKorb(Produkt.getText(), Integer.parseInt(quanitiy.getText()));
+            WahrenKorb w = new WahrenKorb(Produkt.getText(), Integer.parseInt(quanitiy.getText()), allquantity);
             w.newProduct();
+            allquantity = Integer.parseInt(w.refreshQuantity());
             anzahl.setText(w.refreshQuantity());
         }catch (Exception e){
             e.printStackTrace();

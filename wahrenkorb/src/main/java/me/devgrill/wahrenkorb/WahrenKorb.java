@@ -2,13 +2,14 @@ package me.devgrill.wahrenkorb;
 
 public class WahrenKorb {
     public String produktname = "";
+    public int allproducts = 0;
     public int quantity = 0;
     public String[] products = new String[100];
-    public int allproducts = 0;
 
-    public WahrenKorb(String produktname, int quantity) {
+    public WahrenKorb(String produktname, int quantity, int allproducts) {
         this.produktname = produktname;
         this.quantity = quantity;
+        this.allproducts = allproducts;
     }
 
     public void newProduct(){
