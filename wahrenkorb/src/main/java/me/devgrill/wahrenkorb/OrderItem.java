@@ -1,8 +1,8 @@
 package me.devgrill.wahrenkorb;
 
 public class OrderItem {
-    String productName;
-    int amount;
+    private String productName;
+    private int amount;
 
     public OrderItem(String productName, int amount) {
         this.productName = productName;
@@ -23,5 +23,10 @@ public class OrderItem {
 
     public int getAmount(){
         return amount;
+    }
+
+    @Override
+    public String toString(){
+        return this.productName + " " + this.amount;
     }
 }

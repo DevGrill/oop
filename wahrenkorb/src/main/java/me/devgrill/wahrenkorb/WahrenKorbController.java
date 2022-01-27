@@ -35,8 +35,6 @@ public class WahrenKorbController {
     void onAdd(ActionEvent event) {
         try {
             OrderItem item = new OrderItem(Produkt.getText(), Integer.parseInt(quantity.getText()));
-            item.setProductName(Produkt.getText());
-            item.setAmount(Integer.parseInt(quantity.getText()));
             orderedItems.add(item);
             amount++;
             anzahl.setText("(" + Integer.toString(amount) + ")");
