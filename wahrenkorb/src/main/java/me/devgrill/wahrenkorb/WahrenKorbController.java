@@ -38,7 +38,10 @@ public class WahrenKorbController {
             orderedItems.add(item);
             amount++;
             anzahl.setText("(" + Integer.toString(amount) + ")");
-            System.out.println(orderedItems.getLast());
+            for (int i=0; i<orderedItems.size(); i++)
+            {
+                System.out.println(orderedItems.get(i));
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
