@@ -9,14 +9,6 @@ public class OrderItem {
         this.amount = amount;
     }
 
-    public void setProductName(String productName){
-        this.productName = productName;
-    }
-
-    public void setAmount(int amount){
-        this.amount = amount;
-    }
-
     public String getProductName(){
         return productName;
     }
